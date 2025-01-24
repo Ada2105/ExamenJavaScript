@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--<main class="login-design">
+        <div class="waves">
+        </div>
+        <div class="login">
+            <div class="login-data">
+                <h1>Inicio de sesión</h1>
+                <form class="login-form">
+                    <div class="input-group">
+                        <label class="input-fill">
+                            <input type="email" required name="email" id="email">
+                            <span class="input-label">Correo Electrónico</span>
+                            <i class="fa-solid fa-envelope"></i> <br />
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <label class="input-fill">
+                            <input type="password" required name="password" id="password">
+                            <span class="input-label">Contraseña</span>
+                            <i class="fa-solid fa-lock"></i>
+                        </label>
+                    </div>
+                    <a href="#">¿Necesitas una cuenta?</a> <br /> <br />
+                    <button type="submit" id="btn-login">Login</button>
+                </form>
+            </div>
+        </div>
+    </main>-->
+    
+    <div class="board">
+        <div class="column" id="to-do" ondrop="drop(event, 'to-do')" ondragover="allowDrop(event)">
+            <h1>Pending to do</h1>
+            <div class="tasks-button">
+                <input type="text" id="taskInput" class="task-input" placeholder="Task New" oninput="capitalizeInput(this)">
+                <button class="add-button" onclick="addTask('to-do')"> Save new task </button>
+            </div>
+            <div class="cont-tasks"></div>
+        </div>
+
+        <div class="column" id="in-progress" ondrop="drop(event, '-progress')"  ondragover="allowDrop(event)">
+            <h1>In progress</h1>
+            <div class="cont-tasks"></div>
+        </div>
+
+        <div class="column" id="completed" ondrop="drop(event, 'completed')" ondragover="allowDrop(event)">
+            <h1>Completed</h1>
+            <div class="cont-tasks"></div>
+        </div>
+        
+    </div>
+
+
+    <!--<div class="tasks">
+        <input type="text" id="taskInput" class="task-input" placeholder="Qualification:" oninput="capitalizeInput(this)">
+        <input type="text" id="taskInput" class="task-input" placeholder="Description:" oninput="capitalizeInput(this)">
+        <input type="text" id="taskInput" class="task-input" placeholder="Start:" oninput="capitalizeInput(this)">
+        <input type="text" id="taskInput" class="task-input" placeholder="Ending:" oninput="capitalizeInput(this)"> 
+    </div>-->
+
+    
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
