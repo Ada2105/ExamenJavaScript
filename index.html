@@ -9,39 +9,36 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <!--<main class="login-design">
-        <div class="waves">
-        </div>
-        <div class="login">
-            <div class="login-data">
-                <h1>Inicio de sesión</h1>
-                <form class="login-form">
-                    <div class="input-group">
-                        <label class="input-fill">
-                            <input type="email" required name="email" id="email">
-                            <span class="input-label">Correo Electrónico</span>
-                            <i class="fa-solid fa-envelope"></i> <br />
-                        </label>
-                    </div>
-                    <div class="input-group">
-                        <label class="input-fill">
-                            <input type="password" required name="password" id="password">
-                            <span class="input-label">Contraseña</span>
-                            <i class="fa-solid fa-lock"></i>
-                        </label>
-                    </div>
-                    <a href="#">¿Necesitas una cuenta?</a> <br /> <br />
-                    <button type="submit" id="btn-login">Login</button>
-                </form>
-            </div>
-        </div>
-    </main>-->
+    <header>
+            <nav>
+                <button class="button-login">Login</button>
+            </nav>
+    </header>
+
+    <div class="login">
+        <h1>Inicio de sesión</h1>
+            <form class="login-form">
+                <label class="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email">
+                <label class="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button type="submit" id="btn-login">Login</button>
+                <a href="">¿Necesitas una cuenta?</a>
+            </form>
+    </div>
+        
     
     <div class="board">
         <div class="column" id="to-do" ondrop="drop(event, 'to-do')" ondragover="allowDrop(event)">
             <h1>Pending to do</h1>
             <div class="tasks-button">
                 <input type="text" id="taskInput" class="task-input" placeholder="Task New" oninput="capitalizeInput(this)">
+                <div class="tasks">
+                <input type="text" id="taskInput" class="task-input" placeholder="Qualification:" oninput="capitalizeInput(this)">
+                <input type="text" id="taskInput" class="task-input" placeholder="Description:" oninput="capitalizeInput(this)">
+                <input type="text" id="taskInput" class="task-input" placeholder="Start:" oninput="capitalizeInput(this)">
+                <input type="text" id="taskInput" class="task-input" placeholder="Ending:" oninput="capitalizeInput(this)"> 
+            </div>
                 <button class="add-button" onclick="addTask('to-do')"> Save new task </button>
             </div>
             <div class="cont-tasks"></div>
@@ -58,17 +55,7 @@
         </div>
         
     </div>
-
-
-    <div class="tasks">
-        <input type="text" id="taskInput" class="task-input" placeholder="Qualification:" oninput="capitalizeInput(this)">
-        <input type="text" id="taskInput" class="task-input" placeholder="Description:" oninput="capitalizeInput(this)">
-        <input type="text" id="taskInput" class="task-input" placeholder="Start:" oninput="capitalizeInput(this)">
-        <input type="text" id="taskInput" class="task-input" placeholder="Ending:" oninput="capitalizeInput(this)"> 
-    </div>-->
-
-    
-    <script src="/js/app.js"></script>
+   <script src="/js/app.js"></script>
 </body>
 
 </html>
